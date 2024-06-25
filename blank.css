@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-size: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+  margin: 0;
+}
+.banner-img {
+  background-image: url(./flower.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  filter: blur(10px);
+}
+.banner-text {
+  position: absolute;
+  background-color: rgba(216, 31, 176, 0.6);
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  width: 45%;
+  height: 45%;
+  padding: 40px 0;
+  text-align: center;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  background-color: rgba(0, 0 green, 0 blue, 0.3 alpha);
+  color: #fff;
+  font-weight: bold;
+  border: 10px inset#fff;
+}
+.banner-text {
+  padding: 0 8%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+button {
+  border-radius: 25px;
+  background: linear-gradient(to left, #a919c9, #e486f4, #0b67d0);
+  height: 30px;
+  width: 100px;
+  color: aliceblue;
+  font-size: 15px;
+  font-family: "Arial Narrow Bold";
+}
+.img {
+  position: absolute;
+
+  top: 80%;
+  left: 50%;
+  background-image: url(./google.png);
+  background-size: cover;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+}
+.fblogo {
+  position: absolute;
+
+  top: 80%;
+  left: 40%;
+  background-image: url(./icons8-facebook-48.png);
+  background-size: cover;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+input {
+  background: linear-gradient(to left, #825879, #d00fee, #5f0c4e);
+  border: none;
+  color: #fff;
+}
+input::placeholder {
+  position: relative;
+  color: #fff;
+  padding: auto;
+  transform: translatex(30%);
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .banner-text {
+    width: 85vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .banner-text h1 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  .input-container-logo {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    position: relative;
+    justify-content: space-between;
+  }
+  p {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 2px;
+    left: 50%;
+  }
+  .fblogo {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    left: 30%;
+  }
+  /* * {
+    box-sizing: border-box;
+  }
+  body,
+  html {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  h1 {
+    font-size: 1rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .banner-img {
+    background: url(./flower.jpg) center/cover;
+    filter: blur(0.5rem);
+  }
+  .banner-text {
+    position: absolute;
+    background-color: rgba(216, 31, 176, 0.6);
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    width: 75%;
+
+    padding: 1rem 0;
+    text-align: center;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: rgba(0, 0 green, 0 blue, 0.3 alpha);
+    color: #fff;
+    font-weight: bold;
+    border: 10px inset#fff;
+  }
+  .banner-text {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  .input-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+  input {
+    width: 80%;
+    height: 20px;
+
+    background: linear-gradient(to left, #825879, #d00fee, #5f0c4e);
+    border: none;
+  }
+  .input--boxes {
+    display: flex;
+    flex-flow: row;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  button {
+    border-radius: 25px;
+    background: linear-gradient(to left, #a919c9, #e486f4, #0b67d0);
+    height: 0.2rem;
+    width: 1rem;
+    color: aliceblue;
+    font-size: 0.1rem;
+    font-family: "Arial Narrow Bold";
+  }
+  .img {
+    position: absolute;
+
+    top: 80%;
+    left: 50%;
+    background-image: url(./amazon-dark-logo-01F3CFFF03-seeklogo.com.png);
+    background-size: cover;
+    border-radius: 50%;
+    height: 0.5rem;
+    width: 0.5rem;
+  }
+  .fblogo {
+    position: absolute;
+
+    top: 80%;
+    left: 40%;
+    background-image: url(./icons8-facebook-48.png);
+    background-size: cover;
+    border-radius: 50%;
+    height: 0.5rem;
+    width: 0.5rem;
+  }
+
+  input::placeholder {
+    position: relative;
+    color: #fff;
+    padding: auto;
+    
+  } */
+}
